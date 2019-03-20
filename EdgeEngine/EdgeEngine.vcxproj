@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C975FF89-3D26-4EEB-B080-2F1040B8816D}</ProjectGuid>
+    <RootNamespace>EdgeEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\edge;$(ProjectDir)\support;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\prebuilt\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>../EdgeEngine/edge;../EdgeEngine/support;$(IncludePath)</IncludePath>
+    <LibraryPath>../EdgeEngine/prebuilt/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="edge\animation\SkeletonAnimation.h" />
+    <ClInclude Include="edge\animation\SkeletonNode.h" />
+    <ClInclude Include="edge\audio\AudioCommon.h" />
+    <ClInclude Include="edge\audio\AudioConfig.h" />
+    <ClInclude Include="edge\audio\AudioDataCache.h" />
+    <ClInclude Include="edge\audio\AudioManager.h" />
+    <ClInclude Include="edge\audio\IAudio.h" />
+    <ClInclude Include="edge\audio\IAudioCircumstance.h" />
+    <ClInclude Include="edge\audio\IAudioDecoder.h" />
+    <ClInclude Include="edge\audio\IAudioFactory.h" />
+    <ClInclude Include="edge\audio\xaudio2\lib-xaudio2.h" />
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Audio.h" />
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Circumstance.h" />
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Decoder.h" />
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Factory.h" />
+    <ClInclude Include="edge\base\AutoReleasePool.h" />
+    <ClInclude Include="edge\base\CommonConfig.h" />
+    <ClInclude Include="edge\base\Director.h" />
+    <ClInclude Include="edge\base\EdgeTypes.h" />
+    <ClInclude Include="edge\base\IManagerProtocol.h" />
+    <ClInclude Include="edge\base\Input.h" />
+    <ClInclude Include="edge\base\Object.h" />
+    <ClInclude Include="edge\base\PoolManager.h" />
+    <ClInclude Include="edge\base\Schedule.h" />
+    <ClInclude Include="edge\components\AudioComponent.h" />
+    <ClInclude Include="edge\components\Component.h" />
+    <ClInclude Include="edge\components\ImageComponent.h" />
+    <ClInclude Include="edge\components\ScriptComponent.h" />
+    <ClInclude Include="edge\components\TransformComponent.h" />
+    <ClInclude Include="edge\edge.h" />
+    <ClInclude Include="edge\entry\Application.h" />
+    <ClInclude Include="edge\objects\GameObject.h" />
+    <ClInclude Include="edge\objects\ObjectFactory.h" />
+    <ClInclude Include="edge\objects\Scene.h" />
+    <ClInclude Include="edge\platform\IKeyboard.h" />
+    <ClInclude Include="edge\platform\IMouse.h" />
+    <ClInclude Include="edge\platform\IPlatformFactory.h" />
+    <ClInclude Include="edge\platform\IWindow.h" />
+    <ClInclude Include="edge\platform\PlatformConfig.h" />
+    <ClInclude Include="edge\platform\PlatformManager.h" />
+    <ClInclude Include="edge\platform\PlatformMessage.h" />
+    <ClInclude Include="edge\platform\win32\libwin32.h" />
+    <ClInclude Include="edge\platform\win32\Win32Keyboard.h" />
+    <ClInclude Include="edge\platform\win32\Win32Mouse.h" />
+    <ClInclude Include="edge\platform\win32\Win32PlatformFactory.h" />
+    <ClInclude Include="edge\platform\win32\Win32Window.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DCanvasContainer.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DFontRenderer.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DGeometryGraphics.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DRenderCircumstance.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DRendererFactory.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DTexture2D.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DTexture2DRenderer.h" />
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DTextureCache.h" />
+    <ClInclude Include="edge\renderer\Direct2D\libd2d.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9FontRenderer.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9GeometryGraphics.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9RenderCircumstance.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9RendererFactory.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9Texture2D.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9Texture2DRenderer.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9TextureCache.h" />
+    <ClInclude Include="edge\renderer\Direct3D9\libd3d9.h" />
+    <ClInclude Include="edge\renderer\ICanvasContainer.h" />
+    <ClInclude Include="edge\renderer\IFontRenderer.h" />
+    <ClInclude Include="edge\renderer\IGeometryGraphics.h" />
+    <ClInclude Include="edge\renderer\IRenderCircumstance.h" />
+    <ClInclude Include="edge\renderer\IRendererFactory.h" />
+    <ClInclude Include="edge\renderer\ITexture2D.h" />
+    <ClInclude Include="edge\renderer\ITexture2DRenderer.h" />
+    <ClInclude Include="edge\renderer\ITextureCache.h" />
+    <ClInclude Include="edge\renderer\RendererConfig.h" />
+    <ClInclude Include="edge\renderer\RendererManager.h" />
+    <ClInclude Include="edge\types\Color.h" />
+    <ClInclude Include="edge\types\Data.h" />
+    <ClInclude Include="edge\types\Matrix3x2.h" />
+    <ClInclude Include="edge\types\Rect.h" />
+    <ClInclude Include="edge\types\Size.h" />
+    <ClInclude Include="edge\types\SystemTime.h" />
+    <ClInclude Include="edge\types\Vector2D.h" />
+    <ClInclude Include="edge\utils\FileUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="edge\animation\SkeletonAnimation.cpp" />
+    <ClCompile Include="edge\animation\SkeletonNode.cpp" />
+    <ClCompile Include="edge\audio\AudioDataCache.cpp" />
+    <ClCompile Include="edge\audio\AudioManager.cpp" />
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Audio.cpp" />
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Circumstance.cpp" />
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Decoder.cpp" />
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Factory.cpp" />
+    <ClCompile Include="edge\base\AutoReleasePool.cpp" />
+    <ClCompile Include="edge\base\CommonConfig.cpp" />
+    <ClCompile Include="edge\base\Director.cpp" />
+    <ClCompile Include="edge\base\Input.cpp" />
+    <ClCompile Include="edge\base\Object.cpp" />
+    <ClCompile Include="edge\base\PoolManager.cpp" />
+    <ClCompile Include="edge\base\Schedule.cpp" />
+    <ClCompile Include="edge\components\AudioComponent.cpp" />
+    <ClCompile Include="edge\components\Component.cpp" />
+    <ClCompile Include="edge\components\ImageComponent.cpp" />
+    <ClCompile Include="edge\components\ScriptComponent.cpp" />
+    <ClCompile Include="edge\components\TransformComponent.cpp" />
+    <ClCompile Include="edge\entry\Application.cpp" />
+    <ClCompile Include="edge\objects\GameObject.cpp" />
+    <ClCompile Include="edge\objects\ObjectFactory.cpp" />
+    <ClCompile Include="edge\objects\Scene.cpp" />
+    <ClCompile Include="edge\platform\PlatformManager.cpp" />
+    <ClCompile Include="edge\platform\win32\Win32Keyboard.cpp" />
+    <ClCompile Include="edge\platform\win32\Win32Mouse.cpp" />
+    <ClCompile Include="edge\platform\win32\Win32PlatformFactory.cpp" />
+    <ClCompile Include="edge\platform\win32\Win32Window.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DCanvasContainer.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DFontRenderer.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DGeometryGraphics.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DRenderCircumstance.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DRendererFactory.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DTexture2D.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DTexture2DRenderer.cpp" />
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DTextureCache.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9FontRenderer.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9GeometryGraphics.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9RenderCircumstance.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9RendererFactory.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9Texture2D.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9Texture2DRenderer.cpp" />
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9TextureCache.cpp" />
+    <ClCompile Include="edge\renderer\RendererManager.cpp" />
+    <ClCompile Include="edge\types\Color.cpp" />
+    <ClCompile Include="edge\types\Data.cpp" />
+    <ClCompile Include="edge\types\Matrix3x2.cpp" />
+    <ClCompile Include="edge\types\Rect.cpp" />
+    <ClCompile Include="edge\types\Size.cpp" />
+    <ClCompile Include="edge\types\SystemTime.cpp" />
+    <ClCompile Include="edge\types\Vector2D.cpp" />
+    <ClCompile Include="edge\utils\FileUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="edge\objects\GameObject.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

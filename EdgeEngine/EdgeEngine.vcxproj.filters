@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="edge">
+      <UniqueIdentifier>{aed83aac-a790-454f-ac82-0c1ca0d404ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\animation">
+      <UniqueIdentifier>{1ea048de-4b57-42b4-af52-23e33dc9b326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\audio">
+      <UniqueIdentifier>{ac6c7483-5f3c-4f92-aa2f-3a7a1d3661b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\base">
+      <UniqueIdentifier>{9297129b-3782-42fb-84f4-c3ce5592d714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\components">
+      <UniqueIdentifier>{fb0b7a92-8e28-479c-bf15-bfbb447fcb92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\entry">
+      <UniqueIdentifier>{2fd6f03a-1812-494b-98ea-5758ea344e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\objects">
+      <UniqueIdentifier>{3f001741-0cc1-4ba1-811c-f074fa2740b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\platform">
+      <UniqueIdentifier>{ba26e092-e67a-46ea-89da-322f6848d149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\renderer">
+      <UniqueIdentifier>{a9f06554-2924-4e75-aa6d-4f31f93c2552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\types">
+      <UniqueIdentifier>{2277b5e8-f895-4d98-9c9c-d3577321601a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\utils">
+      <UniqueIdentifier>{eb53518c-f9ec-4f7b-9e32-cff3996b9676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\audio\xaudio2">
+      <UniqueIdentifier>{d924df80-842a-4241-baa9-20dd42bce8e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\renderer\direct2d">
+      <UniqueIdentifier>{2644bec2-af41-471e-8a0c-b59d12624130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\renderer\direct3d9">
+      <UniqueIdentifier>{84deb4b6-b35e-43f4-aeb9-1df5bad0ea75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="edge\platform\win32">
+      <UniqueIdentifier>{f288672d-ef22-49fa-8f9b-96adc679267e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="edge\edge.h">
+      <Filter>edge</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\animation\SkeletonAnimation.h">
+      <Filter>edge\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\animation\SkeletonNode.h">
+      <Filter>edge\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\AudioCommon.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\AudioConfig.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\AudioDataCache.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\AudioManager.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\IAudio.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\IAudioCircumstance.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\IAudioDecoder.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\IAudioFactory.h">
+      <Filter>edge\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\xaudio2\lib-xaudio2.h">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Audio.h">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Circumstance.h">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Decoder.h">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\audio\xaudio2\XAudio2Factory.h">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\AutoReleasePool.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\CommonConfig.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\Director.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\EdgeTypes.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\IManagerProtocol.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\Input.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\Object.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\PoolManager.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\base\Schedule.h">
+      <Filter>edge\base</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\components\AudioComponent.h">
+      <Filter>edge\components</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\components\Component.h">
+      <Filter>edge\components</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\components\ImageComponent.h">
+      <Filter>edge\components</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\components\ScriptComponent.h">
+      <Filter>edge\components</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\components\TransformComponent.h">
+      <Filter>edge\components</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\entry\Application.h">
+      <Filter>edge\entry</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\utils\FileUtils.h">
+      <Filter>edge\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\Color.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\Data.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\Matrix3x2.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\Rect.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\Size.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\SystemTime.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\types\Vector2D.h">
+      <Filter>edge\types</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\ICanvasContainer.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\IFontRenderer.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\IGeometryGraphics.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\IRenderCircumstance.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\IRendererFactory.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\ITexture2D.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\ITexture2DRenderer.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\ITextureCache.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\RendererConfig.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\RendererManager.h">
+      <Filter>edge\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DCanvasContainer.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DFontRenderer.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DGeometryGraphics.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DRenderCircumstance.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DRendererFactory.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DTexture2D.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DTexture2DRenderer.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\Direct2DTextureCache.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct2D\libd2d.h">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9FontRenderer.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9GeometryGraphics.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9RenderCircumstance.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9RendererFactory.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9Texture2D.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9Texture2DRenderer.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\Direct3D9TextureCache.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\renderer\Direct3D9\libd3d9.h">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\IKeyboard.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\IMouse.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\IPlatformFactory.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\IWindow.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\PlatformConfig.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\PlatformManager.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\PlatformMessage.h">
+      <Filter>edge\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\win32\libwin32.h">
+      <Filter>edge\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\win32\Win32Keyboard.h">
+      <Filter>edge\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\win32\Win32Mouse.h">
+      <Filter>edge\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\win32\Win32PlatformFactory.h">
+      <Filter>edge\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\platform\win32\Win32Window.h">
+      <Filter>edge\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\objects\GameObject.h">
+      <Filter>edge\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\objects\ObjectFactory.h">
+      <Filter>edge\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="edge\objects\Scene.h">
+      <Filter>edge\objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="edge\animation\SkeletonAnimation.cpp">
+      <Filter>edge\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\animation\SkeletonNode.cpp">
+      <Filter>edge\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\audio\AudioDataCache.cpp">
+      <Filter>edge\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\audio\AudioManager.cpp">
+      <Filter>edge\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Audio.cpp">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Circumstance.cpp">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Decoder.cpp">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\audio\xaudio2\XAudio2Factory.cpp">
+      <Filter>edge\audio\xaudio2</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\AutoReleasePool.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\CommonConfig.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\Director.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\Input.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\Object.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\PoolManager.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\base\Schedule.cpp">
+      <Filter>edge\base</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\components\AudioComponent.cpp">
+      <Filter>edge\components</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\components\Component.cpp">
+      <Filter>edge\components</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\components\ImageComponent.cpp">
+      <Filter>edge\components</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\components\ScriptComponent.cpp">
+      <Filter>edge\components</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\components\TransformComponent.cpp">
+      <Filter>edge\components</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\entry\Application.cpp">
+      <Filter>edge\entry</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\utils\FileUtils.cpp">
+      <Filter>edge\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\Color.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\Data.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\Matrix3x2.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\Rect.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\Size.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\SystemTime.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\types\Vector2D.cpp">
+      <Filter>edge\types</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\RendererManager.cpp">
+      <Filter>edge\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DCanvasContainer.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DFontRenderer.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DGeometryGraphics.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DRenderCircumstance.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DRendererFactory.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DTexture2D.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DTexture2DRenderer.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct2D\Direct2DTextureCache.cpp">
+      <Filter>edge\renderer\direct2d</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9FontRenderer.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9GeometryGraphics.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9RenderCircumstance.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9RendererFactory.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9Texture2D.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9Texture2DRenderer.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\renderer\Direct3D9\Direct3D9TextureCache.cpp">
+      <Filter>edge\renderer\direct3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\platform\PlatformManager.cpp">
+      <Filter>edge\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\platform\win32\Win32Keyboard.cpp">
+      <Filter>edge\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\platform\win32\Win32Mouse.cpp">
+      <Filter>edge\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\platform\win32\Win32PlatformFactory.cpp">
+      <Filter>edge\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\platform\win32\Win32Window.cpp">
+      <Filter>edge\platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\objects\GameObject.cpp">
+      <Filter>edge\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\objects\ObjectFactory.cpp">
+      <Filter>edge\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="edge\objects\Scene.cpp">
+      <Filter>edge\objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="edge\objects\GameObject.inl">
+      <Filter>edge\objects</Filter>
+    </None>
+  </ItemGroup>
+</Project>
